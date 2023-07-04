@@ -169,7 +169,7 @@ void tampilrecord(){
             cout <<"Masukan Nama File(tanpa ekspansi dan menggunakan akhiran .txt): ";
             string filename;
 getline(cin,filename);
-ofstream file("filename");
+ofstream file(filename);
             if (file.is_open()) {
                 for (int i = 0; i <= tail1; i++) {
                     file << "Pelanggan " << i + 1 << ":\n";
